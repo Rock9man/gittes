@@ -1,0 +1,7 @@
+ssh-add ~/.ssh/rsa
+
+eval `ssh-agent -s`
+
+ssh-keygen -t rsa -C "email....."
+
+ssh -T git@github.com
